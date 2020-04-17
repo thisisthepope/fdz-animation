@@ -1,3 +1,23 @@
-.anim {
-  width: 200px;
+body {
+  font-family: Roboto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bodymovinanim {
+  width: 100%;
+  max-width: 100px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+p {
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  letter-spacing: 2px;
 }

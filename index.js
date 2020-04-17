@@ -1,23 +1,16 @@
-const buttonHover = bodymovin.loadAnimation({
-  container: document.getElementById('button-hover'),
+let iconSkipForward = document.querySelector('.bodymovinanim');
+
+let animationSkipForward = bodymovin.loadAnimation({
+  container: iconSkipForward,
   renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: 'button-hover.json',
+  loop: false,
+  autoplay: false,
+  path: 'https://assets3.lottiefiles.com/packages/lf20_eXssG2.json',
+});
+iconSkipForward.addEventListener('click', function () {
+  animationSkipForward.playSegments([30, 62], true);
 });
 
-const buttonStatic = bodymovin.loadAnimation({
-  container: document.getElementById('button-static'),
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: 'button-static.json',
-});
-
-const buttonClick = bodymovin.loadAnimation({
-  container: document.getElementById('button-click'),
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: 'button-click.json',
+iconSkipForward.addEventListener('mouseenter', function () {
+  animationSkipForward.playSegments([0, 31], true);
 });
