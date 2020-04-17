@@ -1,16 +1,36 @@
-let iconSkipForward = document.querySelector('.bodymovinanim');
+let iconSkipForwardUp = document.querySelector('.button-up');
+let iconSkipForwardDown = document.querySelector('.button-down');
 
-let animationSkipForward = bodymovin.loadAnimation({
-  container: iconSkipForward,
+// Skip up animation
+let animationSkipForwardUp = bodymovin.loadAnimation({
+  container: iconSkipForwardUp,
   renderer: 'svg',
   loop: false,
   autoplay: false,
-  path: 'https://assets3.lottiefiles.com/packages/lf20_eXssG2.json',
-});
-iconSkipForward.addEventListener('click', function () {
-  animationSkipForward.playSegments([30, 62], true);
+  path: 'up.json',
 });
 
-iconSkipForward.addEventListener('mouseenter', function () {
-  animationSkipForward.playSegments([0, 31], true);
+iconSkipForwardUp.addEventListener('click', function () {
+  animationSkipForwardUp.playSegments([30, 62], true);
+});
+
+iconSkipForwardUp.addEventListener('mouseenter', function () {
+  animationSkipForwardUp.playSegments([0, 31], true);
+});
+
+// Skip down animation
+let animationSkipForwardDown = bodymovin.loadAnimation({
+  container: iconSkipForwardDown,
+  renderer: 'svg',
+  loop: false,
+  autoplay: false,
+  path: 'down.json',
+});
+
+iconSkipForwardDown.addEventListener('click', function () {
+  animationSkipForwardDown.playSegments([30, 62], true);
+});
+
+iconSkipForwardDown.addEventListener('mouseenter', function () {
+  animationSkipForwardDown.playSegments([0, 31], true);
 });
