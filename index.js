@@ -7,7 +7,7 @@ let animationSkipForwardUp = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: false,
   autoplay: false,
-  path: 'up.json',
+  path: '/up.json',
 });
 
 iconSkipForwardUp.addEventListener('click', function () {
@@ -24,7 +24,7 @@ let animationSkipForwardDown = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: false,
   autoplay: false,
-  path: 'down.json',
+  path: '/down.json',
 });
 
 iconSkipForwardDown.addEventListener('click', function () {
