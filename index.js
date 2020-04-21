@@ -7,7 +7,7 @@ let animationSkipForwardUp = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: false,
   autoplay: false,
-  path: 'up.json',
+  path: 'https://assets10.lottiefiles.com/packages/lf20_IaMY3o.json',
 });
 
 iconSkipForwardUp.addEventListener('click', function () {
@@ -24,7 +24,7 @@ let animationSkipForwardDown = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: false,
   autoplay: false,
-  path: 'down.json',
+  path: 'https://assets2.lottiefiles.com/packages/lf20_mGSvKQ.json',
 });
 
 iconSkipForwardDown.addEventListener('click', function () {
